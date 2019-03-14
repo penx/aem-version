@@ -1,4 +1,4 @@
-#  AEM COMPONENT VERSIONING
+#  AEM component versioning
 
 A Rhino script for AEM to make a component 'versionable' - i.e. to change the JCR structure of a previously published component and to run defined update tasks on old instances of the component.
 
@@ -6,7 +6,7 @@ Authored May 2015 by Alasdair McLeay.
 
 ---
 
-## MAKING A COMPONENT VERSIONABLE
+## Making a component versionable
 
 1. In the component's template, add a root property called 'version':
 
@@ -35,7 +35,7 @@ Authored May 2015 by Alasdair McLeay.
 
 Both can be used if needed, but scripts are run first so that nodes can be moved first before they are created via the template.
 
-## VERSION UPDATE SCRIPTS
+## Version update scripts
 
 Scripted updates are performed via a JSON confuration file. By default they should be stored in '/version/updates/' in the component folder (/apps/*/components/*/version/updates). This path can be configured using the updateScriptLocation setting.
 
