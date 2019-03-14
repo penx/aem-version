@@ -1,0 +1,42 @@
+{
+    "updates": [
+        {
+            "operation": "ifExists",
+            "at": "wrapper",
+            "elseUpdates": [
+                {
+                    "operation": "addNode",
+                    "at": "wrapper",
+                    "jcr:primaryType": "nt:unstructured"
+                },
+                {
+                    "operation": "setProperties",
+                    "at": "wrapper",
+                    "properties": {
+                        "test": "wrapper"
+                    }
+                },
+                {
+                    "operation": "moveNode",
+                    "from": "test",
+                    "to": "wrapper/test",
+                    "overwrite": false
+                }
+            ]
+        },
+        {
+            "operation": "setProperties",
+            "at": "wrapper",
+            "properties": {
+                "test": "wrapper"
+            }
+        },
+        {
+            "operation": "setProperties",
+            "at": "wrapper/test",
+            "properties": {
+                "test": "wrapped"
+            }
+        }
+    ]
+}
